@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+ body{
+     background: #f1f5f5;
+     line-height: 1.5;
+     font-family: 'Open sans', sans-serif;
+ }
+ .title{
+     margin: 2rem 0;
+ }
+ .title h1{
+     text-align: center;
+     text-transform: uppercase;
+     letter-spacing: 3px;
+  }
+
+  .lightBox{
+      display: flex;
+      padding: 1rem;
+      gap: 15px;   
+  } 
+  .lightBox-item > *{
+       transition: all 0.3s linear;
+  }
+  .lightBox-item > *:hover{
+       box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5); 
+  }
+img{
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  #modal{
+       display: none;
+       position: fixed;
+       width: 100%;
+       height: 100%;
+       top: 0;  
+       left: 0;
+       overflow: hidden;
+       background: #000;
+       padding-top: 100px;
+       background-color: rgba(0, 0, 0, 1);
+  }
+  .close_btn{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2.5rem;
+        border: none;
+        background: none;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s linear;
+  }
+  .close_btn:hover{
+    color: red;
+  }
+  .modal-content{
+      width: 90vw;
+      margin: 0 auto;
+      height: auto;
+      max-width: 80rem;
+      position: relative;
+  }
+  .slide_num{
+       position: absolute;
+       top: 0%;
+       left: 0%;
+       padding: 0.5rem;
+       color: #fff;
+       font-size: 1rem;
+  }
+  .modal-slide img{
+       height: 350px;
+       width: 1000px;
+  }
+  .prev, .next{
+      position: absolute;
+      top: 50%;
+      margin-top: -120px;
+      font-size: 2.5rem;
+      padding: 0.5rem 0.75rem;
+      user-select: none;
+      border: none;
+      background: none;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s linear;
+      border-radius: 0 5px 5px 0;
+  }
+.next{
+     right: 0;
+     border-radius: 5px 0 0 5px;
+}
+.prev:hover, .next:hover{
+    background: #000;
+}
+.caption-container{
+     width: 100%;
+     padding: 1rem;
+     background: #000;
+}
+.caption-container .caption{
+     text-align: center;    
+     color: #fff;
+     text-transform: capitalize;
+     letter-spacing: 3px;
+}
+
+.modal-active-container{
+     display: flex;
+}
+.item img{
+     opacity: 0.7;
+     transition: all 0.3s li  near;
+     cursor: pointer;
+}
+
+.item img:hover, .item img.active{
+     opacity: 1;
+}
+.modal-slide{
+    display: none;
+}
