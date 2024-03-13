@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light box</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <!-- Light Box container Hain -->
+      <div class="title">
+           <h1>Light box</h1>
+      </div>
+      <div class="lightBox">
+          <div class="lightBox-item">
+               <img src="/lightbox/images/img_nature.jpg" alt="()" style="width: 100%;" class="img_1">
+          </div>
+          <div class="lightBox-item">
+               <img src="/lightbox/images/img_snow.jpg" alt="()" style="width: 100%;" class="img_2">
+          </div>
+          <div class="lightBox-item">
+               <img src="/lightbox/images/img_mountains.jpg" alt="()" style="width: 100%;" class="img_3">
+          </div>
+          <div class="lightBox-item">
+               <img src="/lightbox/images/img_lights.jpg" alt="()" style="width: 100%;" class="img_4">
+          </div>
+      </div>
+
+      <div id="modal">
+          <button class="close_btn">&times;</button>
+            <div class="modal-content">
+                 <div class="modal-slide">
+                       <div class="slide_num">1/4</div>
+                       <img src="/lightbox/images/img_nature.jpg" alt="()" style="width: 100%;">
+                 </div>
+                 <div class="modal-slide">
+                       <div class="slide_num">2/4</div>
+                       <img src="/lightbox/images/img_snow.jpg" alt="()" style="width: 100%;">
+                 </div>
+                 <div class="modal-slide">
+                       <div class="slide_num">3/4</div>
+                       <img src="/lightbox/images/img_mountains.jpg" alt="()" style="width: 100%;">
+                 </div>
+                 <div class="modal-slide">
+                       <div class="slide_num">4/4</div>
+                        <img src="/lightbox/images/img_lights.jpg" alt="()" style="width: 100%;">
+                 </div>
+                 <button class="prev">&#10094;</button>
+                 <button class="next">&#10095;</button>
+               <div class="caption-container">
+                    <p class="caption">caption</p>
+               </div>
+                 <div class="modal-active-container">
+                      <div class="item">
+                            <img src="/lightbox/images/img_nature.jpg" alt="The Nature" style="width: 100%;" id="1">
+                      </div>
+                      <div class="item">
+                            <img src="/lightbox/images/img_snow.jpg" alt="The Snow" style="width: 100%;" id="2">
+                      </div>
+                      <div class="item">
+                            <img src="/lightbox/images/img_mountains.jpg" alt="The mountain" style="width: 100%;" id="3">
+                      </div>
+                      <div class="item">
+                            <img src="/lightbox/images/img_lights.jpg" alt="The Light" style="width: 100%;" id="4">
+                      </div>
+                 </div>
+
+            </div>
+      </div>
+
+</body>
+</html>
